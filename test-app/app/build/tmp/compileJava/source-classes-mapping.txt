@@ -1,0 +1,2 @@
+com/axelor/test/App.java
+ com.axelor.test.App
