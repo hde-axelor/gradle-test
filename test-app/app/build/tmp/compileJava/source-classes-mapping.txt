@@ -1,2 +1,4 @@
 com/axelor/test/App.java
  com.axelor.test.App
+com/axelor/test/Student.java
+ com.axelor.test.Student
