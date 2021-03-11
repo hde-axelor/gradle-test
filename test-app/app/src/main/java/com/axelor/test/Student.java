@@ -1,28 +1,22 @@
 package com.axelor.test;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "Student_details")
 public class Student {
-	
+
+	@Id
+	@GeneratedValue
 	private int id;
 	private String name;
 	private String city;
 	
-	public Student(int id, String name, String city) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.city = city;
-	}
-	public Student() {}
-	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return this.id+" : "+this.name+" : "+this.city;
-	}
-	public int getId() { 
+
+	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
@@ -40,5 +34,12 @@ public class Student {
 	public void setCity(String city) {
 		this.city = city;
 	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + "]";
+	}
+	
+	
 }
 
