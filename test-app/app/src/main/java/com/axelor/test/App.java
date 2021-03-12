@@ -21,9 +21,9 @@ public class App {
 		SessionFactory factory = cfg.buildSessionFactory();
 
 		Student st = new Student();
-		st.setId(106);
-		st.setName("Harshit");
-		st.setCity("Banglore");
+		st.setId(15);
+		st.setName("Rohan sir");
+		st.setCity("Surat");
 		System.out.println(st);
 
 		//ADDRESS OBJECT

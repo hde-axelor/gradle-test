@@ -16,7 +16,7 @@ public class FetchData {
 		Session session = factory.openSession();
 		Transaction tx = session.beginTransaction();
 		
-		Student student=(Student)session.get(Student.class,106);
+		Student student=(Student)session.get(Student.class,1);
 		System.out.println(student);
 		
 		tx.commit();

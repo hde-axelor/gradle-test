@@ -2,3 +2,17 @@ com/axelor/test/App.java
  com.axelor.test.App
 com/axelor/test/Student.java
  com.axelor.test.Student
+com/axelor/oneToMany/Student1.java
+ com.axelor.oneToMany.Student1
+com/axelor/oneToOne/Main.java
+ com.axelor.oneToOne.Main
+com/axelor/test/Address.java
+ com.axelor.test.Address
+com/axelor/oneToMany/School.java
+ com.axelor.oneToMany.School
+com/axelor/oneToOne/Answers.java
+ com.axelor.oneToOne.Answers
+com/axelor/oneToOne/Question.java
+ com.axelor.oneToOne.Question
+com/axelor/test/FetchData.java
+ com.axelor.test.FetchData
