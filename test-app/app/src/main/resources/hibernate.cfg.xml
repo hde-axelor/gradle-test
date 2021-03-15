@@ -22,6 +22,9 @@
 		<mapping class="com.axelor.oneToMany.Student1" />
 		<mapping class="com.axelor.map_many_to_many.Emp" />
 		<mapping class="com.axelor.map_many_to_many.Project" />
+		<mapping class="com.axelor.map_many_to_one.Owner" />
+		<mapping class="com.axelor.map_many_to_one.Main4" />
+		<mapping class="com.axelor.map_many_to_one.Car" />
 
 	</session-factory>
 

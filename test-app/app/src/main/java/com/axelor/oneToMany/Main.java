@@ -51,14 +51,19 @@ public class Main {
 
 		Session session = factory.openSession();
 		Transaction tx = session.beginTransaction();
-
-		session.save(sch);
-
-		session.save(st);
-		session.save(st1);
-
-		tx.commit();
-		factory.close();
+		
+		try {
+			session.save(sch);
+			session.save(st);
+			session.save(st1);
+			tx.commit(); 
+		} catch (Exception ex) {
+			tx.rollback();
+			System.out.println("Exception occurred while saving data: " + ex.getMessage());
+			ex.printStackTrace();
+		} finally {
+			factory.close();
+		} 
 
 	}
 }

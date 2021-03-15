@@ -4,7 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-@Entity()
+
+@Entity
 public class Student1 {
 	
 	@Id
@@ -14,7 +15,6 @@ public class Student1 {
 	
 	@ManyToOne
     private School school;
-
 	
 	public int getStudents_id() {
 		return Students_id;

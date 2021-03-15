@@ -1,11 +1,12 @@
 package com.axelor.oneToOne;
 
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class Main {
+public class Main4 {
 
 	public static void main(String[] args) {
 
@@ -22,8 +23,8 @@ public class Main {
 		qu.setQuestion("What is java");
 		
 		Question qu1 = new Question();
-		qu.setQuestion_id(201);
-		qu.setQuestion("What is ORM");
+		qu1.setQuestion_id(2002);
+		qu1.setQuestion("What is ORM");
 		
 
 		// Instance of Answer
@@ -31,10 +32,15 @@ public class Main {
 		Answers answer = new Answers();
 		answer.setAnswer_id(302);
 		answer.setAnswer("Java is a Programming Language");
+		answer.setQuestion(qu);
+		qu.setAnswer(answer);
 		
 		Answers answer1 = new Answers();
 		answer.setAnswer_id(302);
 		answer.setAnswer("Object Relational Mapping");
+		answer.setQuestion(qu1);
+		qu1.setAnswer(answer1);
+		
 		
       
 		System.out.println(answer);
@@ -43,20 +49,23 @@ public class Main {
 
 		Session session = factory.openSession();
 		Transaction tx = session.beginTransaction();
-
-		session.save(qu);
-		session.save(answer);
 		
-		session.save(qu1);
-		session.save(answer1);
+		try {
 
-		tx.commit();
+			session.save(qu);
+			session.save(answer);
+			
+			session.save(qu1);
+			session.save(answer1);
+			tx.commit();
+		} catch (Exception ex) {
+			System.out.println("Exception occurred while saving data: " + ex.getMessage());
+			ex.printStackTrace();
+			tx.rollback();
+		} finally {
+			session.close();
+			factory.close();
+		}
 		 
-		   Question newq = (Question)session.get(Question.class, 200);
-		   System.out.println(newq.getQuestion());
-		   System.out.println(newq.getAnswers().getAnswer_id());
-		
-		session.close();
-		factory.close();
-	}
+   }
 }

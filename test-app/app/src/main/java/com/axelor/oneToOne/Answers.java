@@ -3,6 +3,7 @@ package com.axelor.oneToOne;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Answers {
@@ -12,7 +13,15 @@ public class Answers {
 	 private int answer_id;
 	 private String answer;
 	 
+	 @OneToOne(mappedBy = "answer")
+	 private Question question;
 		 
+	public Question getQuestion() {
+		return question;
+	}
+	public void setQuestion(Question question) {
+		this.question = question;
+	}
 	public int getAnswer_id() {
 		return answer_id;
 	}
