@@ -28,17 +28,17 @@ public class Main {
 		Student1 st = new Student1();
 		
 		st.setStudents_id(10);
-		st.setStudents_name("Raghav");
+		st.setStudents_name("Ramesh");
 		st.setSchool(sch);
 
 		Student1 st1 = new Student1();
 		st1.setStudents_id(10);
-		st1.setStudents_name("Raghav");
+		st1.setStudents_name("RAmesh");
 		st.setSchool(sch);
 
 		Student1 st2 = new Student1();
 		st2.setStudents_id(10);
-		st2.setStudents_name("Raghav");
+		st2.setStudents_name("Ramesh");
 		st.setSchool(sch);
 
 		List<Student1> ls = new ArrayList<Student1>();

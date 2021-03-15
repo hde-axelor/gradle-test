@@ -17,9 +17,8 @@ public class Project {
 	 private String project_name;
 
 
-
-	@ManyToMany
-	 private List<Emp> emps;
+    @ManyToMany
+    private List<Emp> emps;
 
 	public int getProject_id() {
 		return project_id;

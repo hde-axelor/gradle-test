@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.axelor.test.Student;
+
 @Entity
 public class School {
 
@@ -17,7 +19,7 @@ public class School {
 	private String School_name;
 
 	@OneToMany(mappedBy = "school")
-	private List<Student1> students;
+	private List<Student> students;
 
 	public int getSchool_id() {
 		return school_id;
@@ -35,11 +37,11 @@ public class School {
 		School_name = school_name;
 	}
 
-	public List<Student1> getStudents() {
+	public List<Student> getStudents() {
 		return students;
 	}
 
-	public void setStudents(List<Student1> students) {
+	public void setStudents(List<Student> students) {
 		this.students = students;
 	}
 
