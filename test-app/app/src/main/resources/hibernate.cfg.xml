@@ -25,6 +25,12 @@
 		<mapping class="com.axelor.map_many_to_one.Owner" />
 		<mapping class="com.axelor.map_many_to_one.Main4" />
 		<mapping class="com.axelor.map_many_to_one.Car" />
+		<mapping class="com.axelor.com.demo.validation.Employee" />
+		<mapping class="com.axelor.com.demo.validation.Email" />
+		<mapping class="com.axelor.com.demo.validation.MainClass" />
+		<mapping class="com.axelor.one_to_many_address.Adress" />
+		<mapping class="com.axelor.one_to_many_address.Owner" />
+		<mapping class="com.axelor.one_to_many_address.AdressMain" />
 
 	</session-factory>
 

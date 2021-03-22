@@ -18,6 +18,7 @@ public class School {
 
 	private String School_name;
 
+
 	@OneToMany(mappedBy = "school")
 	private List<Student> students;
 
