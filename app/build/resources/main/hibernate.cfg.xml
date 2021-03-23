@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="connection.url">jdbc:postgresql://localhost:5432/hb-test</property>
+		<property name="connection.username">axelor</property>
+		<property name="connection.password">axelor</property>
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		
+		<mapping class="com.axelor.test.Student" />
+		<mapping class="com.axelor.test.Address" />
+		<mapping class="com.axelor.test.App" />
+		
+		<mapping class="com.axelor.oneToOne.Answers" />
+		<mapping class="com.axelor.oneToOne.Question" />
+		<mapping class="com.axelor.oneToOne.Main4" />
+		
+		<mapping class="com.axelor.one2m.School" />
+		<mapping class="com.axelor.one2m.Student1" />
+		<mapping class="com.axelor.one2m.Main" />
+		
+		<mapping class="com.axelor.m2m.Emp" />
+		<mapping class="com.axelor.m2m.Project" />
+		<mapping class="com.axelor.m2m.Main2" />
+		
+		<mapping class="com.axelor.m2o.Owner" />
+		<mapping class="com.axelor.m2o.Mainclass" />
+		<mapping class="com.axelor.m2o.Car" />
+		
+		<!-- <mapping class="com.axelor.validation.Employee" />
+		<mapping class="com.axelor.validation.Email" />
+		<mapping class="com.axelor.validation.MainClass" /> -->
+		
+		<mapping class="com.axelor.one2many.Adress" />
+		<mapping class="com.axelor.one2many.Owner" />
+		<mapping class="com.axelor.one2many.AdressMain" />
+
+	</session-factory>
+
+</hibernate-configuration>
