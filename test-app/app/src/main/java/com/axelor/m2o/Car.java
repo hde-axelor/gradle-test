@@ -1,4 +1,4 @@
-package many_to_one;
+package com.axelor.m2o;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

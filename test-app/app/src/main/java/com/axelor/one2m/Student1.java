@@ -1,4 +1,4 @@
-package com.axelor.oneToMany;   
+package com.axelor.one2m;   
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

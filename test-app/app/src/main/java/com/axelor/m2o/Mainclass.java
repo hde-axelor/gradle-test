@@ -1,4 +1,4 @@
-package many_to_one;
+package com.axelor.m2o;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

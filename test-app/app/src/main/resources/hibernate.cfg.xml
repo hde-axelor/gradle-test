@@ -12,25 +12,36 @@
 		<property name="connection.username">axelor</property>
 		<property name="connection.password">axelor</property>
 		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-		<property name="hbm2ddl.auto">update</property>
+		<property name="hbm2ddl.auto">create</property>
 		<property name="show_sql">true</property>
+		
 		<mapping class="com.axelor.test.Student" />
 		<mapping class="com.axelor.test.Address" />
+		<mapping class="com.axelor.test.App" />
+		
 		<mapping class="com.axelor.oneToOne.Answers" />
 		<mapping class="com.axelor.oneToOne.Question" />
-		<mapping class="com.axelor.oneToMany.School" />
-		<mapping class="com.axelor.oneToMany.Student1" />
-		<mapping class="com.axelor.map_many_to_many.Emp" />
-		<mapping class="com.axelor.map_many_to_many.Project" />
-		<mapping class="com.axelor.map_many_to_one.Owner" />
-		<mapping class="com.axelor.map_many_to_one.Main4" />
-		<mapping class="com.axelor.map_many_to_one.Car" />
-		<mapping class="com.axelor.com.demo.validation.Employee" />
-		<mapping class="com.axelor.com.demo.validation.Email" />
-		<mapping class="com.axelor.com.demo.validation.MainClass" />
-		<mapping class="com.axelor.one_to_many_address.Adress" />
-		<mapping class="com.axelor.one_to_many_address.Owner" />
-		<mapping class="com.axelor.one_to_many_address.AdressMain" />
+		<mapping class="com.axelor.oneToOne.Main4" />
+		
+		<mapping class="com.axelor.one2m.School" />
+		<mapping class="com.axelor.one2m.Student1" />
+		<mapping class="com.axelor.one2m.Main" />
+		
+		<mapping class="com.axelor.m2m.Emp" />
+		<mapping class="com.axelor.m2m.Project" />
+		<mapping class="com.axelor.m2m.Main2" />
+		
+		<mapping class="com.axelor.m2o.Owner" />
+		<mapping class="com.axelor.m2o.Mainclass" />
+		<mapping class="com.axelor.m2o.Car" />
+		
+		<mapping class="com.axelor.validation.Employee" />
+		<mapping class="com.axelor.validation.Email" />
+		<mapping class="com.axelor.validation.MainClass1" />
+		
+		<mapping class="com.axelor.one2many.Adress" />
+		<mapping class="com.axelor.one2many.Owner" />
+		<mapping class="com.axelor.one2many.AdressMain" />
 
 	</session-factory>
 

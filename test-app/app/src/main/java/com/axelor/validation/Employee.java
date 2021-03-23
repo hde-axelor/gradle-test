@@ -1,4 +1,4 @@
-package com.demo.validation;
+package com.axelor.validation;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,13 +20,13 @@ public class Employee {
 	
 	@OneToMany
 	@Column(unique = true)
-	private String email;
+	private Email email;
 	
 	
-	public String getEmail() {
+	public Email getEmail() {
 		return email;
 	}
-	public void setEmail(String email) {
+	public void setEmail(Email email) {
 		this.email = email;
 	}
 	public int getEmp_id() {

@@ -1,4 +1,4 @@
-package com.axelor.map_many_to_many;
+package com.axelor.m2m;
 
 import java.util.ArrayList;
 import java.util.List;

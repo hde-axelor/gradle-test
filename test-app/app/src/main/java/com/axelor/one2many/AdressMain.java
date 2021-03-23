@@ -1,4 +1,4 @@
-package one_to_many_address;
+package com.axelor.one2many;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

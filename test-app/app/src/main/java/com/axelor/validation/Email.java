@@ -1,4 +1,4 @@
-package com.demo.validation;
+package com.axelor.validation;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +14,10 @@ public class Email {
 	@Column(unique = true)
 	private String email;
 	
+	@Override
+	public String toString() {
+		return "Email [id=" + id + ", email=" + email + ", emp=" + emp + "]";
+	}
 	@ManyToOne
 	private Employee emp;
 	

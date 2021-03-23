@@ -1,4 +1,4 @@
-package com.axelor.oneToMany;
+package com.axelor.one2m;
 
 import java.util.List;
 
